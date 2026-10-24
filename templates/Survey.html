@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>    
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+    <div id="title-banner">
+      <h1 style="text-align: center;">Mind Steps - Memory and Alzheimer's Support</h1>
+    </div>
+  <!-- Navigation bar -->
+  <nav class="topnav" aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/info">Information</a>
+    <a href="/factors">Factors and Lifestyle</a>
+    <a href="/support">Support and Care</a>
+    <a href="/math_level">Math Games</a>
+    <a href="/alphabet_level">Alphabet Games</a>
+    <!--
+    <a href="/Cognitive_Assessment">Cognitive Assessment</a>
+    -->
+    <a href="/survey">Memory Check-in</a>
+    <a href="/resources">Resources</a>
+  </nav> 
+  <div class="content-box">
+<p>Everyone forgets things now and then. This check-in helps you notice any changes in memory.</p>
+<h4>This is not a diagnosis. Only a medical professional can assess and diagnose you.</h4>
+
+    <div id="questionnaire">
+      <form id="surveyform">
+      <ol> 
+        <li>
+        <label for="age-input">Are you over the age of 65?</label>
+        <br>
+        <input type="radio" id="age-input-Yes" name="age-input" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="age-input-No" name="age-input" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+         <label for="Memory-daily-question1">Do you forget recent events, conversations, or appointments?</label>
+        <br>
+        <input type="radio" id="Memory-daily-question1-Yes" name="Memory-daily-question1" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Memory-daily-question1-No" name="Memory-daily-question1" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+        <label for="Memory-daily-question2">Do you frequently misplace items or put them in unusual places?</label>
+        <br>
+        <input type="radio" id="Memory-daily-question2-Yes" name="Memory-daily-question2" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Memory-daily-question2-No" name="Memory-daily-question2" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+        
+        <li>
+        <label for="Memory-daily-question3">Do you find it difficult to remember names of familiar people or objects?</label>
+        <br>
+        <input type="radio" id="Memory-daily-question3-Yes" name="Memory-daily-question3" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Memory-daily-question3-No" name="Memory-daily-question3" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+        <label for="Orientation-awarness-question1">Do you get confused about the date, day of the week, or where you are?</label>
+        <br>
+        <input type="radio" id="Orientation-awarness-question1-Yes" name="Orientation-awarness-question1" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Orientation-awarness-question1-No" name="Orientation-awarness-question1" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+        <label for="Orientation-awarness-question2">Do you have trouble following directions, such as getting to familiar locations?</label>
+        <br>
+        <input type="radio" id="Orientation-awarness-question2-Yes" name="Orientation-awarness-question2" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Orientation-awarness-question2-No" name="Orientation-awarness-question2" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+        <label for="Planning-problemsolving-question1">Is it hard for you to manage finances, pay bills, or follow a simple plan?</label>
+        <br>
+        <input type="radio" id="Planning-problemsolving-question1-Yes" name="Planning-problemsolving-question1" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Planning-problemsolving-question1-No" name="Planning-problemsolving-question1" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+        <label for="Planning-problemsolving-question2">Do you struggle with cooking a familiar recipe or following step-by-step instructions?</label>
+        <br>
+        <input type="radio" id="Planning-problemsolving-question2-Yes" name="Planning-problemsolving-question2" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Planning-problemsolving-question2-No" name="Planning-problemsolving-question2" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+        <label for="Language-communication-question1">Do you have difficulty finding the right words when speaking or writing?</label>
+        <br>
+        <input type="radio" id="Language-communication-question1-Yes" name="Language-communication-question1" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Language-communication-question1-No" name="Language-communication-question1" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <li>
+        <label for="Language-communication-question2">Do you repeat questions or stories without realizing it?</label>
+        <br>
+        <input type="radio" id="Language-communication-question2-Yes" name="Language-communication-question2" value="Yes"> <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="Language-communication-question2-No" name="Language-communication-question2" value="No"> <label for="No">No</label>
+        <br>
+        </li>
+        <br>
+
+        <script src="/static/submit_survey.js"></script>
+        <br>
+        <br>
+        <button type="button" id="survey-submit" class="survey-submit" onclick="count_yes_survey('surveyform')">Submit</button>
+        <p>Yes answers: <span id="Yes-count">0</span></p>
+        <p id="resource-link"></p>
+        <p id="result-message"></p>
+        <button type="reset" class="general-button" onclick="document.getElementById('Yes-count').textContent = 0; document.getElementById('resource-link').innerHTML='';">Reset Form</button>
+        </li>
+
+</ol>
+</form>
+
+</div>
+
+

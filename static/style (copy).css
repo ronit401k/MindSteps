@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #d8d3e6 0%, #c4bdd8 100%);
+  color: #111827;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 80%;
+  gap: 20px; 
+  padding-left: 400px; 
+}
+.column {
+  flex: 1; 
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.section-about-us-image {
+  display: block;
+  max-width: 1000px;   
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  border-radius: 16px;
+}
+
+/*
+.topnav {
+  display: flex;
+  flex-direction: column;   
+  flex-wrap: nowrap;        
+  align-items: stretch;     
+  margin-top: 20px;
+  gap: 12px;
+  justify-content: flex-start;   
+
+  padding: 6px;
+  margin: 0;
+
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(17, 24, 39, 0.15);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.topnav a {
+  display: inline-block;
+
+  padding: 14px 16px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: #111827;
+  background: rgba(237, 233, 243, 0.9); 
+  border: 1px solid rgba(17, 24, 39, 0.12);
+}
+
+.topnav a:hover {
+  background: rgba(220, 214, 232, 1);
+}
+
+.topnav a:focus-visible {
+  outline: 3px solid #111827;
+  outline-offset: 2px;
+}
+
+.topnav a[aria-current="page"] {
+  background: #5b547a;
+  color: #ffffff;
+  border-color: transparent;
+}
+*/
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.resource-list li {
+  background: #ffffff;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(17, 24, 39, 0.15);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.resource-list a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.resource-list strong {
+  font-size: 20px;
+}
+
+.section-alzh-image {
+  display: block;
+  max-width: 400px;   
+  width: 100%;
+  height: auto;
+  margin: 16px;
+  border-radius: 16px;
+}
+
+.survey-submit {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+}
+
+.general-button  {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+}

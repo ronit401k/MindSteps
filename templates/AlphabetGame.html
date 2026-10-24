@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Go Letters</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin: 30px;
+      }
+
+      #shown-letter {
+        font-size: 100px;
+        font-weight: bold;
+        margin: 20px auto;
+        width: 260px;
+        padding: 20px 10px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.85);
+      }
+
+      button {
+        font-size: 22px;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .yes-btn { background: #2f6f4e; color: white; }
+      .no-btn  { background: #5b547a; color: white; }
+
+      #feedback {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <div id="title-banner">
+    <h1 style="text-align: center;">Mind Steps - Memory and Alzheimer's Support</h1>
+  </div>
+  <!-- Navigation bar -->
+  <nav class="topnav" aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/info">Information</a>
+    <a href="/factors">Factors and Lifestyle</a>
+    <a href="/support">Support and Care</a>
+    <a href="/math_level">Math Games</a>
+    <a href="/alphabet_level">Alphabet Games</a>
+    <!--
+    <a href="/Cognitive_Assessment">Cognitive Assessment</a>
+    -->
+    <a href="/survey">Memory Check-in</a>
+    <a href="/resources">Resources</a>
+  </nav> 
+  <body>
+    <h1>Amazing Alphabets</h1>
+    <p id="alpha_level" style="color: rgba(50, 90, 235, 1)"></p>
+
+    <p id="question">Loading question...</p>
+    <div id="shown-letter" aria-live="polite">?</div>
+
+    <div>
+      <button class="yes-btn" onclick="submitAlphabetAnswer(true)">✅ Yes</button>
+      <button class="no-btn" onclick="submitAlphabetAnswer(false)">❌ No</button>
+    </div>
+
+    <button onclick="loadAlphabetQuestion()">Next Question</button>
+
+    <p id="feedback" aria-live="polite"></p>
+    <p id="score">Score: 0</p>
+
+    <script src="/static/game_alpha.js"></script>
+    <script>
+      window.onload = loadAlphabetQuestion;
+    </script>
+  </body>
+</html>

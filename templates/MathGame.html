@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GO Math</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+    <div id="title-banner">
+      <h1 style="text-align: center;">Mind Steps - Memory and Alzheimer's Support</h1>
+    </div>
+    
+  <!-- Navigation bar -->
+  <nav class="topnav" aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/info">Information</a>
+    <a href="/factors">Factors and Lifestyle</a>
+    <a href="/support">Support and Care</a>
+    <a href="/math_level">Math Games</a>
+    <a href="/alphabet_level">Alphabet Games</a>
+    <!--
+    <a href="/Cognitive_Assessment">Cognitive Assessment</a>
+    -->
+    <a href="/survey">Memory Check-in</a>
+    <a href="/resources">Resources</a>
+  </nav> 
+  
+    <h1>Math is Fun!</h1>
+    <p id="level" style="color: rgba(50, 90, 235, 1)"></p>
+    
+    <p id="question">Loading question...</p>
+    <input type="number" id="answer" placeholder="Your answer" />
+    <br />
+    <button onclick="submitAnswer()">Submit Answer</button>
+    <button onclick="loadQuestion()">Next Question</button>
+
+    <p id="feedback"></p>
+    <p id="score">Score: 0</p>
+
+    <script src="/static/game.js"></script>
+    <script>
+      // Load first question on page load
+      window.onload = loadQuestion;
+    </script>
+  </body>
+</html>

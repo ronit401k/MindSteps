@@ -1,0 +1,3 @@
+Varsity Brains is an app designed to help the user understand Alzheimer's disease.
+Within the app itself, the user can play interactive games such as a math or alphabet game. The user can also navigate to the suggestions bar and can view ways to help guide the user through their journey in overcoming Alzheimer's.
+The user can also take a survey where they can determine if they need to see a doctor or not regarding Alzheimer's. Varsity Brains are designed for the elderly population with them being most susceptible to alzheimer's due to their age. 
