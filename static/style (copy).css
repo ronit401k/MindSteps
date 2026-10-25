@@ -1,10 +1,4 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #d8d3e6 0%, #c4bdd8 100%);
-  color: #111827;
-  min-height: 100vh;
-  padding: 20px;
-}
+
 
 .flex-container {
   display: flex;
@@ -95,14 +89,6 @@ body {
   line-height: 1.6;
 }
 
-.resource-list a {
-  color: #2563eb;
-  text-decoration: underline;
-}
-
-.resource-list strong {
-  font-size: 20px;
-}
 
 .section-alzh-image {
   display: block;
